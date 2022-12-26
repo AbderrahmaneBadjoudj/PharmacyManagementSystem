@@ -1,14 +1,20 @@
 package Controllers;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.application.Application;
+import javafx.fxml.Initializable;
 import javafx.stage.Stage;
 
-public class statisticController extends Application{
+public class statisticController implements Initializable{
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 		
 	}
+
+
 
 }

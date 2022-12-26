@@ -1,14 +1,18 @@
 package Controllers;
 
-import javafx.application.Application;
-import javafx.stage.Stage;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class venteController extends Application{
+import javafx.fxml.Initializable;
+
+public class venteController implements Initializable{
 
 	@Override
-	public void start(Stage primaryStage) throws Exception {
+	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 		
 	}
+
+	
 
 }

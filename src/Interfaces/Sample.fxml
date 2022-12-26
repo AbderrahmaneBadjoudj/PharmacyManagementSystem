@@ -17,17 +17,17 @@
          <left>
             <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #008000;" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="WHITE" layoutX="71.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To The Pharmacy ">
+                  <Text fill="WHITE" layoutX="71.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To The Pharmacy ">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
-                  <ImageView fitHeight="135.0" fitWidth="148.0" layoutX="114.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="135.0" fitWidth="148.0" layoutX="114.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Desktop/icons/571ae39ce1b3360b0cf852322b413bdb.png" />
+                        <Image url="@../../../../Desktop/icons/LogoPharmacieRed.png" />
                      </image>
                   </ImageView>
-                  <Text fill="WHITE" layoutX="97.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management System">
+                  <Text fill="WHITE" layoutX="97.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management System">
                      <font>
                         <Font size="18.0" />
                      </font>
