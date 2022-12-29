@@ -3,9 +3,9 @@ package Controllers;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.application.Application;
+
 import javafx.fxml.Initializable;
-import javafx.stage.Stage;
+
 
 public class statisticController implements Initializable{
 

@@ -32,27 +32,27 @@
             <Text fill="GREEN" layoutX="71.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System" />
             <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="13.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/icons/pngtree-medicine-bottle-icon-simple-style-png-image_1838471.jpg" />
+                  <Image url="@../Images/LogoMedicin.jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="13.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/icons/34627.png" />
+                  <Image url="@../Images/LogoVente.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/icons/42362.png" />
+                  <Image url="@../Images/LogoStatistique.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="17.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/icons/50041.png" />
+                  <Image url="@../Images/LogoAjouterUtilisateur.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Desktop/icons/png-transparent-computer-icons-logout-angle-text-black.png" />
+                  <Image url="@../Images/LogOutIcon.png" />
                </image>
             </ImageView>
          </children>

@@ -1,6 +1,6 @@
 package Controllers;
 
-import java.awt.event.ActionEvent;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -14,16 +14,17 @@ import javafx.scene.control.TextField;
 
 public class SampleController implements Initializable{
 	@FXML
-    private Button login;
+	private PasswordField Password;
+
 
     @FXML
-    private PasswordField passwordField;
+    private TextField UserNameField;
 
     @FXML
-    private TextField usernameField;
-    
+    private Button btn_login;
+
     @FXML
-     void onLogin(ActionEvent event) {
+    void onLogin() {
 
     }
 
