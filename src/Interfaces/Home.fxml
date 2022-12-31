@@ -27,7 +27,7 @@
             </ImageView>
             <Text fill="GREEN" layoutX="71.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy" />
             <FontAwesomeIconView glyphName="HOME" layoutX="15.0" layoutY="148.0" size="14" />
-            <FontAwesomeIconView glyphName="USER" layoutX="17.0" layoutY="226.0" size="14" />
+            <FontAwesomeIconView glyphName="USER" layoutX="17.0" layoutY="226.0" size="14" text="" />
             <Text fill="GREEN" layoutX="71.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" />
             <Text fill="GREEN" layoutX="71.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System" />
             <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="13.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
@@ -61,13 +61,30 @@
    <right>
       <AnchorPane prefHeight="560.0" prefWidth="571.0" style="-fx-background-color: #008000;" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;" />
-            <Text fill="WHITE" layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistic">
+            <Text fill="WHITE" layoutX="121.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the" wrappingWidth="292.47607421875">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="39.0" />
                </font>
             </Text>
-         </children>
-      </AnchorPane>
+            <Text fill="WHITE" layoutX="170.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy" wrappingWidth="292.47607421875">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="147.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" wrappingWidth="292.47607421875">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="191.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System" wrappingWidth="292.47607421875">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="205.0" fitWidth="194.0" layoutX="172.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoPharmacieRed.png" />
+               </image></ImageView>
+         </children></AnchorPane>
    </right>
 </BorderPane>

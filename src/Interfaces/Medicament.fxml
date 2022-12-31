@@ -2,6 +2,10 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -27,7 +31,7 @@
             </ImageView>
             <Text fill="GREEN" layoutX="71.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy" />
             <FontAwesomeIconView glyphName="HOME" layoutX="15.0" layoutY="148.0" size="14" />
-            <FontAwesomeIconView glyphName="USER" layoutX="17.0" layoutY="226.0" size="14" />
+            <FontAwesomeIconView glyphName="USER" layoutX="17.0" layoutY="226.0" size="14" text="" />
             <Text fill="GREEN" layoutX="71.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" />
             <Text fill="GREEN" layoutX="71.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System" />
             <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="13.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
@@ -61,8 +65,62 @@
    <right>
       <AnchorPane prefHeight="560.0" prefWidth="571.0" style="-fx-background-color: #008000;" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;" />
-            <Text fill="WHITE" layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistic">
+            <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField layoutX="19.0" layoutY="38.0" />
+                  <TextField layoutX="191.0" layoutY="38.0" />
+                  <TextField layoutX="21.0" layoutY="102.0" />
+                  <TextField layoutX="190.0" layoutY="102.0" />
+                  <TextField layoutX="21.0" layoutY="173.0" />
+                  <Label layoutX="21.0" layoutY="13.0" text="Code Medicament" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="74.0" text="Désignation" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="146.0" text="Prix de vente" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="13.0" text="Date d'éxpiration" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="191.0" layoutY="74.0" text="Quantité en stock" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="363.0" layoutY="12.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
+                     <children>
+                        <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
+                        <Button layoutX="22.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
+                        <Button layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
+                     </children>
+                  </AnchorPane>
+                  <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
+                    <columns>
+                      <TableColumn prefWidth="104.0" text="Code-Med" />
+                      <TableColumn prefWidth="136.0" text="Désignation" />
+                        <TableColumn prefWidth="76.0" text="Prix" />
+                        <TableColumn prefWidth="110.0" text="Date d'éxpiration" />
+                        <TableColumn prefWidth="71.0" text="Quantite" />
+                    </columns>
+                  </TableView>
+                  <TextField layoutX="22.0" layoutY="231.0" prefHeight="58.0" prefWidth="497.0" />
+                  <Label layoutX="21.0" layoutY="205.0" text="Remarque" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Text fill="WHITE" layoutX="222.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicament">
                <font>
                   <Font size="24.0" />
                </font>
