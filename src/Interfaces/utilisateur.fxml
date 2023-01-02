@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="BASELINE_LEFT" layoutY="131.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Home" textFill="GREEN" />
+            <Button alignment="BASELINE_LEFT" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Medicament" textFill="GREEN" />
+            <Button alignment="BASELINE_LEFT" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Client" textFill="GREEN" />
+            <Button alignment="BASELINE_LEFT" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Vente" textFill="GREEN" />
+            <Button alignment="BASELINE_LEFT" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Statistique" textFill="GREEN" />
+            <Button layoutX="1.0" layoutY="490.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="Deconnexion" textFill="GREEN" />
+            <Button alignment="BASELINE_LEFT" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="          Ajouter Utilisateur" textFill="GREEN" />
+            <ImageView fitHeight="74.0" fitWidth="59.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoPharmacyGreen.png" />
+               </image>
+            </ImageView>
+            <Text fill="GREEN" layoutX="71.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy" />
+            <FontAwesomeIconView glyphName="HOME" layoutX="15.0" layoutY="148.0" size="14" />
+            <FontAwesomeIconView glyphName="USER" layoutX="17.0" layoutY="226.0" size="14" text="" />
+            <Text fill="GREEN" layoutX="71.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" />
+            <Text fill="GREEN" layoutX="71.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System" />
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="13.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoMedicin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="13.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoVente.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoStatistique.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="17.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoAjouterUtilisateur.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogOutIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="560.0" prefWidth="571.0" style="-fx-background-color: #008000;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField layoutX="19.0" layoutY="38.0" />
+                  <TextField layoutX="191.0" layoutY="38.0" />
+                  <TextField layoutX="21.0" layoutY="102.0" />
+                  <TextField layoutX="190.0" layoutY="102.0" />
+                  <TextField layoutX="21.0" layoutY="173.0" />
+                  <Label layoutX="21.0" layoutY="13.0" text="Code Utilisateur" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="74.0" text="Nom" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="146.0" text="Prenom" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="13.0" text="Password" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="191.0" layoutY="74.0" text="Type" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="363.0" layoutY="12.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
+                     <children>
+                        <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
+                        <Button layoutX="22.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
+                        <Button layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
+                     </children>
+                  </AnchorPane>
+                  <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
+                    <columns>
+                      <TableColumn prefWidth="104.0" text="Code-Uti" />
+                      <TableColumn prefWidth="136.0" text="Nom" />
+                        <TableColumn prefWidth="76.0" text="Prenom" />
+                        <TableColumn prefWidth="110.0" text="Password" />
+                        <TableColumn prefWidth="71.0" text="Type" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+            <Text fill="WHITE" layoutX="190.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Utilisateur">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
