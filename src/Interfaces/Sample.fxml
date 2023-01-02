@@ -49,11 +49,7 @@
                         <Font size="22.0" />
                      </font>
                   </Text>
-                  <Button layoutX="314.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
-                     <graphic>
-                        <FontAwesomeIconView fill="GREEN" glyphName="CLOSE" size="18" />
-                     </graphic>
-                  </Button>
+                  <Button layoutX="314.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
                </children>
             </AnchorPane>
          </right>
