@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.venteController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
          <children>
@@ -67,37 +67,48 @@
          <children>
             <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <TextField layoutX="19.0" layoutY="38.0" />
-                  <TextField layoutX="191.0" layoutY="38.0" />
-                  <TextField layoutX="21.0" layoutY="102.0" />
-                  <TextField layoutX="190.0" layoutY="102.0" />
-                  <TextField layoutX="21.0" layoutY="173.0" />
-                  <Label layoutX="21.0" layoutY="13.0" text="Code Medicament" textFill="GREEN">
+                  <TextField layoutX="19.0" layoutY="58.0" />
+                  <TextField layoutX="191.0" layoutY="58.0" />
+                  <TextField layoutX="21.0" layoutY="122.0" />
+                  <TextField layoutX="190.0" layoutY="122.0" />
+                  <TextField layoutX="21.0" layoutY="193.0" />
+                  <TextField layoutX="21.0" layoutY="262.0" />
+                  <Label layoutX="21.0" layoutY="30.0" text="Code Medicament" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="21.0" layoutY="74.0" text="Désignation" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="94.0" text="Dosage" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="21.0" layoutY="146.0" text="Prix de vente" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="166.0" text="Code Client" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="190.0" layoutY="13.0" text="Date d'éxpiration" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="236.0" text="Date" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="191.0" layoutY="74.0" text="Quantité en stock" textFill="GREEN">
+                  <Label layoutX="190.0" layoutY="30.0" text="Quantité" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <AnchorPane layoutX="363.0" layoutY="12.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
+                  <Label layoutX="191.0" layoutY="94.0" text="Prix" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="116.0" fitWidth="146.0" layoutX="209.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/LogoVente.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="363.0" layoutY="56.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
                      <children>
                         <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
                         <Button layoutX="22.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
@@ -106,21 +117,16 @@
                   </AnchorPane>
                   <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
                     <columns>
-                      <TableColumn prefWidth="104.0" text="Code-Med" />
-                      <TableColumn prefWidth="136.0" text="Désignation" />
-                        <TableColumn prefWidth="76.0" text="Prix" />
-                        <TableColumn prefWidth="110.0" text="Date d'éxpiration" />
-                        <TableColumn prefWidth="71.0" text="Quantite" />
+                      <TableColumn prefWidth="99.0" text="Code-Med" />
+                      <TableColumn prefWidth="79.0" text="Dosage" />
+                        <TableColumn text="Code-cli" />
+                        <TableColumn prefWidth="82.0" text="Date" />
+                        <TableColumn prefWidth="84.0" text="Quantite" />
+                        <TableColumn prefWidth="74.0" text="Prix" />
                     </columns>
                   </TableView>
-                  <TextField layoutX="22.0" layoutY="231.0" prefHeight="58.0" prefWidth="497.0" />
-                  <Label layoutX="21.0" layoutY="205.0" text="Remarque" textFill="GREEN">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
                </children></AnchorPane>
-            <Text fill="WHITE" layoutX="222.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicament">
+            <Text fill="WHITE" layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vente">
                <font>
                   <Font size="24.0" />
                </font>
