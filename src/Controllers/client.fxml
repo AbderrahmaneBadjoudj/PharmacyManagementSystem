@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.clientController">
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
          <children>
@@ -72,7 +72,7 @@
                   <TextField layoutX="21.0" layoutY="102.0" />
                   <TextField layoutX="190.0" layoutY="102.0" />
                   <TextField layoutX="21.0" layoutY="173.0" />
-                  <Label layoutX="21.0" layoutY="13.0" text="Code Utilisateur" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="13.0" text="Code Client" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -87,12 +87,12 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="190.0" layoutY="13.0" text="Password" textFill="GREEN">
+                  <Label layoutX="190.0" layoutY="13.0" text="Telephone" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="191.0" layoutY="74.0" text="Type" textFill="GREEN">
+                  <Label layoutX="191.0" layoutY="74.0" text="Address" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -104,17 +104,24 @@
                         <Button layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
                      </children>
                   </AnchorPane>
-                  <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
+                  <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="505.0">
                     <columns>
-                      <TableColumn prefWidth="104.0" text="Code-Uti" />
-                      <TableColumn prefWidth="136.0" text="Nom" />
-                        <TableColumn prefWidth="76.0" text="Prenom" />
-                        <TableColumn prefWidth="110.0" text="Password" />
-                        <TableColumn prefWidth="71.0" text="Type" />
+                      <TableColumn prefWidth="75.0" text="Code-Cli" />
+                      <TableColumn prefWidth="86.0" text="Nom" />
+                        <TableColumn prefWidth="87.0" text="Prenom" />
+                        <TableColumn prefWidth="97.0" text="Telephone" />
+                        <TableColumn prefWidth="85.0" text="Address" />
+                        <TableColumn prefWidth="75.0" text="Remarque" />
                     </columns>
                   </TableView>
+                  <TextField layoutX="22.0" layoutY="231.0" prefHeight="58.0" prefWidth="497.0" />
+                  <Label layoutX="21.0" layoutY="205.0" text="Remarque" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
                </children></AnchorPane>
-            <Text fill="WHITE" layoutX="190.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Utilisateur">
+            <Text fill="WHITE" layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client">
                <font>
                   <Font size="24.0" />
                </font>
