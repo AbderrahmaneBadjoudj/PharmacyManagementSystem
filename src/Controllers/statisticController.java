@@ -1,4 +1,4 @@
-/*package Controllers;
+package Controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,4 +18,3 @@ public class statisticController implements Initializable{
 
 
 }
-*/

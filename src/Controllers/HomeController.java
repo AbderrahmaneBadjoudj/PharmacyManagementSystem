@@ -1,4 +1,4 @@
-/*package Controllers;
+package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,7 +19,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_AjouterUtilisateur(MouseEvent event) {
 		try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/utilisateur.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/utilisateur.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -31,7 +31,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_Client(MouseEvent event) {
     	try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/client.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/client.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -42,7 +42,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_Home(MouseEvent event) {
     	try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/Home.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/Home.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -53,7 +53,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_Medicament(MouseEvent event) {
     	try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/Medicament.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/Medicament.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -64,7 +64,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_Statistique(MouseEvent event) {
     	try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/statistic.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/statistic.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -75,7 +75,7 @@ public class HomeController implements Initializable {
     @FXML
     void btn_Vente(MouseEvent event) {
     	try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/Ventepage.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/Ventepage.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -86,7 +86,7 @@ public class HomeController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		try {
-			fxml=FXMLLoader.load(getClass().getResource("/Interfaces/Home.fxml"));
+			fxml=FXMLLoader.load(getClass().getResource("/Controllers/Home.fxml"));
 			root.getChildren().removeAll();
 			root.getChildren().setAll(fxml);
 		} catch (IOException e) {
@@ -96,4 +96,3 @@ public class HomeController implements Initializable {
 	}
 
 }
-*/
