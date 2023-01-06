@@ -36,7 +36,7 @@ public class SampleController implements Initializable{
     		System.out.println("bien!");
     		Stage home=new Stage();
     		try {
-				fxml=FXMLLoader.load(getClass().getResource("/Interfaces/Home.fxml"));
+				fxml=FXMLLoader.load(getClass().getResource("/Controllers/Home.fxml"));
 				Scene scene=new Scene(fxml);
 				home.setScene(scene);
 				home.show();

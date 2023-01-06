@@ -12,13 +12,13 @@
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
          <children>
-            <Button alignment="BASELINE_LEFT" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#btn_Home" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Home" textFill="GREEN" />
-            <Button alignment="BASELINE_LEFT" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#btn_Medicament" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Medicament" textFill="GREEN" />
-            <Button alignment="BASELINE_LEFT" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#btn_Client" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Client" textFill="GREEN" />
-            <Button alignment="BASELINE_LEFT" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#btn_Vente" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Vente" textFill="GREEN" />
-            <Button alignment="BASELINE_LEFT" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#btn_Statistique" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Statistique" textFill="GREEN" />
-            <Button layoutX="1.0" layoutY="490.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="Deconnexion" textFill="GREEN" />
-            <Button alignment="BASELINE_LEFT" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#btn_AjouterUtilisateur" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="          Ajouter Utilisateur" textFill="GREEN" />
+            <Button fx:id="btn_Home" alignment="BASELINE_LEFT" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonHome" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Home" textFill="GREEN" />
+            <Button fx:id="btn_Medicament" alignment="BASELINE_LEFT" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonMedicament" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Medicament" textFill="GREEN" />
+            <Button fx:id="btn_Client" alignment="BASELINE_LEFT" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonClient" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Client" textFill="GREEN" />
+            <Button fx:id="btn_Vente" alignment="BASELINE_LEFT" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonVente" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Vente" textFill="GREEN" />
+            <Button fx:id="btn_Statistique" alignment="BASELINE_LEFT" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonStatistique" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="          Statistique" textFill="GREEN" />
+            <Button fx:id="btn_Decconexion" layoutX="1.0" layoutY="490.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonDeconnexion" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="Deconnexion" textFill="GREEN" />
+            <Button fx:id="btn_AjouterUtilisateur" alignment="BASELINE_LEFT" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#ClickOnButtonAjouterUtilisateur" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #ffffff;" text="          Ajouter Utilisateur" textFill="GREEN" />
             <ImageView fitHeight="74.0" fitWidth="59.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/LogoPharmacyGreen.png" />

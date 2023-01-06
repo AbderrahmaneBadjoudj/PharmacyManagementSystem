@@ -74,12 +74,12 @@
          <children>
             <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <TextField fx:id="code_med" layoutX="19.0" layoutY="58.0" />
-                  <TextField fx:id="quantite" layoutX="191.0" layoutY="58.0" />
-                  <TextField fx:id="dosage" layoutX="21.0" layoutY="122.0" />
-                  <TextField fx:id="prix" layoutX="190.0" layoutY="122.0" />
-                  <TextField fx:id="code_cli" layoutX="21.0" layoutY="193.0" />
-                  <TextField fx:id="date" layoutX="21.0" layoutY="262.0" />
+                  <TextField fx:id="Code_Med" layoutX="19.0" layoutY="58.0" />
+                  <TextField fx:id="Quantite" layoutX="191.0" layoutY="58.0" />
+                  <TextField fx:id="Dosage" layoutX="21.0" layoutY="122.0" />
+                  <TextField fx:id="Prix" layoutX="190.0" layoutY="122.0" />
+                  <TextField fx:id="Nom_Cli" layoutX="21.0" layoutY="193.0" />
+                  <TextField fx:id="Prenom_Cli" layoutX="21.0" layoutY="262.0" />
                   <Label layoutX="21.0" layoutY="30.0" text="Code Medicament" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
@@ -90,12 +90,12 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="21.0" layoutY="166.0" text="Code Client" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="166.0" text="Nom Client" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="21.0" layoutY="236.0" text="Date" textFill="GREEN">
+                  <Label layoutX="21.0" layoutY="236.0" text="Prenom Client" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -110,11 +110,6 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="116.0" fitWidth="146.0" layoutX="209.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/LogoVente.png" />
-                     </image>
-                  </ImageView>
                   <AnchorPane layoutX="363.0" layoutY="56.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
                      <children>
                         <Button fx:id="btn_enregistrer" layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
@@ -122,16 +117,23 @@
                         <Button fx:id="btn_supprimer" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
                      </children>
                   </AnchorPane>
-                  <TableView fx:id="tableaux" layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
+                  <TableView fx:id="TableauxVente" layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
                     <columns>
-                      <TableColumn prefWidth="99.0" text="Code-Med" />
-                      <TableColumn prefWidth="79.0" text="Dosage" />
-                        <TableColumn text="Code-cli" />
-                        <TableColumn prefWidth="82.0" text="Date" />
-                        <TableColumn prefWidth="84.0" text="Quantite" />
-                        <TableColumn prefWidth="74.0" text="Prix" />
+                      <TableColumn prefWidth="77.0" text="Code-Med" />
+                      <TableColumn prefWidth="54.0" text="Dosage" />
+                        <TableColumn prefWidth="99.0" text="Nom Client" />
+                        <TableColumn prefWidth="95.0" text="Prenom Client" />
+                        <TableColumn minWidth="6.0" prefWidth="70.0" text="Date" />
+                        <TableColumn prefWidth="58.0" text="Quantite" />
+                        <TableColumn prefWidth="45.0" text="Prix" />
                     </columns>
                   </TableView>
+                  <TextField fx:id="Date" layoutX="190.0" layoutY="193.0" />
+                  <Label layoutX="188.0" layoutY="166.0" text="Date" textFill="GREEN">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
                </children></AnchorPane>
             <Text fill="WHITE" layoutX="243.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vente">
                <font>
