@@ -112,20 +112,20 @@
                   </Label>
                   <AnchorPane layoutX="363.0" layoutY="56.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
                      <children>
-                        <Button fx:id="btn_enregistrer" layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
-                        <Button fx:id="btn_modifier" layoutX="22.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
-                        <Button fx:id="btn_supprimer" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
+                        <Button fx:id="btn_enregistrer_vente" layoutX="23.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#Add_Vente" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
+                        <Button fx:id="btn_modifier_vente" layoutX="22.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#Modifier_Vente" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
+                        <Button fx:id="btn_supprimer_vente" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#Supprimer_Vente" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
                      </children>
                   </AnchorPane>
                   <TableView fx:id="TableauxVente" layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
                     <columns>
-                      <TableColumn prefWidth="77.0" text="Code-Med" />
-                      <TableColumn prefWidth="54.0" text="Dosage" />
-                        <TableColumn prefWidth="99.0" text="Nom Client" />
-                        <TableColumn prefWidth="95.0" text="Prenom Client" />
-                        <TableColumn minWidth="6.0" prefWidth="70.0" text="Date" />
-                        <TableColumn prefWidth="58.0" text="Quantite" />
-                        <TableColumn prefWidth="45.0" text="Prix" />
+                      <TableColumn fx:id="Code_Med_Cell" prefWidth="77.0" text="Code-Med" />
+                      <TableColumn fx:id="Dosage_Cell" prefWidth="54.0" text="Dosage" />
+                        <TableColumn fx:id="Nom_Cli_Cell" prefWidth="99.0" text="Nom Client" />
+                        <TableColumn fx:id="Prenom_Cli_Cell" prefWidth="95.0" text="Prenom Client" />
+                        <TableColumn fx:id="Date_Cell" minWidth="6.0" prefWidth="70.0" text="Date" />
+                        <TableColumn fx:id="Quantite_Cell" prefWidth="58.0" text="Quantite" />
+                        <TableColumn fx:id="Prix_Cell" prefWidth="45.0" text="Prix" />
                     </columns>
                   </TableView>
                   <TextField fx:id="Date" layoutX="190.0" layoutY="193.0" />
