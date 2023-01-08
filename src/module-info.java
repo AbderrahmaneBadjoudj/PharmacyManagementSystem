@@ -8,6 +8,6 @@ module PharmacyManagementSystem {
 	
 	opens application to javafx.graphics, javafx.fxml;
 	opens Controllers to  javafx.fxml;
-	opens models to  javafx.fxml;
+	opens models to  javafx.fxml,javafx.base;
 
 }
