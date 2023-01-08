@@ -14,7 +14,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception  {
 		try {
 		
-			Parent root = FXMLLoader.load(getClass().getResource("/Controllers/Sample.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/Controllers/Ventepage.fxml"));
 			Scene scene = new Scene(root);
 			scene.setFill(Color.TRANSPARENT);
 			primaryStage.setScene(scene);
