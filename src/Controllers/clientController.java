@@ -7,10 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXButton.ButtonType;
+//import com.jfoenix.controls.JFXButton.ButtonType;
 
-import application.ConnexionMysql;
-import javafx.application.Application;
+
+import application.DataBaseConnexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -22,7 +22,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
 import models.client;
 public class clientController implements Initializable{
 	
@@ -286,7 +285,7 @@ public class clientController implements Initializable{
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		 cnx=ConnexionMysql.connexionDB();
+		 cnx=DataBaseConnexion.connexionDB();
 		 showclient();
 		
 	}
