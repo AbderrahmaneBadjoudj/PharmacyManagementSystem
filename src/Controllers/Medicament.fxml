@@ -74,12 +74,12 @@
          <children>
             <AnchorPane layoutX="22.0" layoutY="29.0" prefHeight="511.0" prefWidth="528.0" style="-fx-background-color: #ffffff;">
                <children>
-                  <TextField layoutX="19.0" layoutY="38.0" />
-                  <TextField layoutX="191.0" layoutY="38.0" />
-                  <TextField layoutX="21.0" layoutY="102.0" />
-                  <TextField layoutX="190.0" layoutY="102.0" />
-                  <TextField layoutX="21.0" layoutY="173.0" />
-                  <Label layoutX="21.0" layoutY="13.0" text="Code Medicament" textFill="GREEN">
+                  <TextField fx:id="Code_Med" layoutX="19.0" layoutY="38.0" />
+                  <TextField fx:id="Date_EXP" layoutX="191.0" layoutY="38.0" />
+                  <TextField fx:id="Désignation" layoutX="21.0" layoutY="102.0" />
+                  <TextField fx:id="Quantité" layoutX="190.0" layoutY="102.0" />
+                  <TextField fx:id="Prix" layoutX="21.0" layoutY="173.0" />
+                  <Label layoutX="19.0" layoutY="13.0" text="Code Medicament" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -106,21 +106,22 @@
                   </Label>
                   <AnchorPane layoutX="363.0" layoutY="12.0" prefHeight="184.0" prefWidth="150.0" style="-fx-background-color: #008000;">
                      <children>
-                        <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
-                        <Button layoutX="22.0" layoutY="67.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
-                        <Button layoutX="23.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
+                        <Button fx:id="enregistrer_med" layoutX="23.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#add_med" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Enregistrer" />
+                        <Button fx:id="modifier_med" layoutX="22.0" layoutY="67.0" mnemonicParsing="false" onMouseClicked="#edit_med" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Modifier" />
+                        <Button fx:id="supprimer_med" layoutX="23.0" layoutY="115.0" mnemonicParsing="false" onMouseClicked="#delete_med" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Supprimer" />
                      </children>
                   </AnchorPane>
-                  <TableView layoutX="21.0" layoutY="297.0" prefHeight="200.0" prefWidth="499.0">
+                  <TableView fx:id="tab_medicament" layoutX="21.0" layoutY="297.0" onMouseClicked="#tableMedicamentEvent" prefHeight="200.0" prefWidth="499.0">
                     <columns>
-                      <TableColumn prefWidth="104.0" text="Code-Med" />
-                      <TableColumn prefWidth="136.0" text="Désignation" />
-                        <TableColumn prefWidth="76.0" text="Prix" />
-                        <TableColumn prefWidth="110.0" text="Date d'éxpiration" />
-                        <TableColumn prefWidth="71.0" text="Quantite" />
+                      <TableColumn fx:id="col_code" prefWidth="78.0" text="Code-Med" />
+                      <TableColumn fx:id="col_désignation" prefWidth="108.0" text="Désignation" />
+                        <TableColumn fx:id="col_prix" prefWidth="54.0" text="Prix" />
+                        <TableColumn fx:id="col_date" prefWidth="108.0" text="Date d'éxpiration" />
+                        <TableColumn fx:id="col_quantité" prefWidth="65.0" text="Quantite" />
+                        <TableColumn fx:id="col_remarque" prefWidth="84.0" text="Remarque" />
                     </columns>
                   </TableView>
-                  <TextField layoutX="22.0" layoutY="231.0" prefHeight="58.0" prefWidth="497.0" />
+                  <TextField fx:id="Remarque" layoutX="22.0" layoutY="231.0" prefHeight="58.0" prefWidth="497.0" />
                   <Label layoutX="21.0" layoutY="205.0" text="Remarque" textFill="GREEN">
                      <font>
                         <Font size="14.0" />
